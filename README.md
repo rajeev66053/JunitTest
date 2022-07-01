@@ -2,7 +2,7 @@
 Contact Manager application developed for Junit 5 Tutorial
 
 
-####Junit is a simple framework to write repeatable tests
+#### Junit is a simple framework to write repeatable tests
 
 * Junit 5 is the combination of three module
 * junit platform: The Junit Platform project provides an API to launch the tests from either the IDE’s, Build Tools or Console. It defines a TestEngine API which enables development of new Testing Frameworks on top of the Platform.
@@ -10,7 +10,7 @@ Contact Manager application developed for Junit 5 Tutorial
 junit vintage This project provides a TestEngine implementation to support backward compatibility for tests written with Junit 3 and Junit4.
 
 
-####Different phase of junit 5
+#### Different phase of junit 5
 - @BeforeAll :It will execute before all test case
 - @BeforeEach: It will run before each test case
 - @Test : It will run the test case
@@ -23,17 +23,17 @@ _Note: @AfterAll and @AfterEach is used to perform the cleanup tasks for tests._
 
 Junit instantiate  the test class only once in java using the @TestInstance(TestInstance.Lifecycle.PER_CLASS) then we can remove static keyword from @beforeAll method and @AfterAll method
 
-####Conditional execution of test class.
+#### Conditional execution of test class.
 @EnabledOnOs -> enable on os level
 @DisabledOnOs -> disable on os level
 
 
-####Assumptions
+#### Assumptions
 
 The test will not fail but aborted if the testing environment is different.
 
 
-####RepeatedTest
+#### RepeatedTest
 
 @RepeatedTest annotation
 
@@ -46,7 +46,7 @@ It will repeat 5 times.
 Junit automatically fills {currentRepeatition} and {totalRepeatitions} values to show current count.
 
 
-####Parameterized Tests in Junit
+#### Parameterized Tests in Junit
 @ParameterizedTest annotation
 
 Similar to repeated test but difference is we can run the test repeatedly by different set of input.
@@ -60,7 +60,7 @@ Similar to repeated test but difference is we can run the test repeatedly by dif
 
 Another way of providing value to parameterized test is using the @MethodSource
 
-####Nested Test
+#### Nested Test
 - Used to group tests together into a logical group.
 - Makes the test class more organized
 - @Nested used on the  top of the class
